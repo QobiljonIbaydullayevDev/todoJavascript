@@ -17,15 +17,7 @@ const addHandler=()=>{
             todoList.removeChild(newTodoList)
             todoList.removeChild(span)
         })
-        saveDate()
     }
     inputBx.value=''
 }
 
-function saveDate(){
-    localStorage.setItem("data", todoList.innerHTML)
-}
-function showTask(){
-    todoList.innerHTML=localStorage.getItem("data")
-}
-showTask()
