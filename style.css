@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.todoInput{
+    width: 350px;
+    height: 40px;
+    border:none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0 0 0 10px;
+    list-style-type: none;
+    font-size: 30px;
+
+}
+.btn{
+    width: 80px;
+    height: 40px;
+    border: none;
+    padding:0px 0 0 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+}
+
+.newTodo{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 86px;
+}
+
+li{
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0 0 0 10px;
+    list-style-type: none;
+    font-size: 30px;
+    background-color: white;
+}
+
+ span{
+    width: 80px;
+    height: 40px;
+    position: relative;
+    top: -2.5rem;
+    left: 21.9rem;
+    border: none;
+    padding:6px 0 0 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}
+span:hover{
+    cursor: pointer;
+}
+.btn:hover{
+    cursor: pointer;
+}
