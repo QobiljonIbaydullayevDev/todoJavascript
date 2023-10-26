@@ -1,5 +1,7 @@
 const inputBx = document.getElementById("inputBox")
 const todoList = document.querySelector('.newTodo')
+const toddbox =document.getElementById("inputBox")
+const span = document.querySelector("span")
 
 const addHandler=()=>{
     if(inputBx.value===''){
@@ -7,13 +9,15 @@ const addHandler=()=>{
     }
 
     else{
+        console.log(todoList);
         let newTodoList = document.createElement("li")
         newTodoList.innerHTML=inputBx.value
         todoList.appendChild(newTodoList)
-
+        console.log(newTodoList);
         let span =document.createElement("span")
         span.innerHTML="Remove"
         todoList.appendChild(span)
+        console.log(span);
         span.addEventListener("click",()=>{
             todoList.removeChild(newTodoList)
             todoList.removeChild(span)
@@ -25,8 +29,10 @@ const addHandler=()=>{
 const focusHandler=()=>{
     inputBx.style.backgroundColor="Azure"
     inputBx.style.outline="None"
-    // inputBx.focus()
-    // inputBx.autocapitalize="off"
-    // inputBx.style.border="None"
 }
+
+window.document.body.style.userSelect="None"
+
+
+
 
