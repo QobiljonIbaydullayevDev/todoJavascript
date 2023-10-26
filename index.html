@@ -7,16 +7,12 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="todoContainer">
-        <h1>To do in javascript</h1>
-        <div class="container">
-            <input id="inputBox" class="todoInput" type="text" placeholder="Write your text">
+    <h1>To do in javascript</h1>
+    <div class="container">
+            <input id="inputBox" onfocus="focusHandler()" class="todoInput" type="text" placeholder="Write your text" autocomplete="off" autofocus="off">
             <button class="btn" onclick="addHandler()">Add</button>
-        </div>
-        <div class="newTodoBox">
-            <ul class="newTodo"></ul>
-        </div>
     </div>
+    <ul class="newTodo"></ul>
     
     <script src="./script.js"></script>
 </body>
