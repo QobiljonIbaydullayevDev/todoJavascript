@@ -12,6 +12,7 @@ const addHandler=()=>{
         console.log(todoList);
         let newTodoList = document.createElement("li")
         newTodoList.innerHTML=inputBx.value
+        console.log(inputBx.value);
         todoList.appendChild(newTodoList)
         console.log(newTodoList);
         let span =document.createElement("span")
